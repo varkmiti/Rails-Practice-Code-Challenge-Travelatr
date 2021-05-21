@@ -1,0 +1,6 @@
+<h3> All Destinations </h3>
+
+<% @destinations.each do |destination| %>
+    <%= link_to destination.name, destination_path(destination) %>
+    <br>
+<%end%>
