@@ -1,0 +1,7 @@
+<h1><%=@post.title%></h1>
+<h2><%=link_to @post_author.name, @post_author%></h2>
+<h2><%=link_to @post_destination.name, @post_destination%></h2>
+<p><%=@post.content%></p>
+<p><%=@post.likes%></p>
+
+<%= link_to "Like this Post", "/posts/#{@post.id}?liked=true"%>
